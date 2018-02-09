@@ -74,24 +74,24 @@ var users =[
 {
  "name" : "mario bros77",
  "console" : "nintendo switch",
- "avatar" :"assets/images/avatar-1.png"
+ "avatar" :"../assets/images/avatar-1.png"
 },
 
 {
  "name" : "bella gamer",
  "console" : "ps4",
- "avatar" :"assets/images/avatar-2.png"
+ "avatar" :"../assets/images/avatar-2.png"
 },
 
 {
  "name" : "glan turing",
  "console" : "xbox one",
- "avatar" :"assets/images/avatar-3.png"
+ "avatar" :"../assets/images/avatar-3.png"
 },
 {
  "name" : "batman",
  "console" : "ps4",
- "avatar" :"assets/images/avatar-4.png"
+ "avatar" :"../assets/images/avatar-4.png"
 },
 
 ];

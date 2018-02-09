@@ -17,7 +17,7 @@ function loadPage () {
   $addBtn.click(getText);
   //$addBtn.click(paintText);
   $searchInput.keyup(filterMembers);
-  $searchInput.click(paintMembers);
+  //$searchInput.click(paintMembers);
 }
 
 /*funcion que pinta la data obtenida en el index.html
@@ -65,12 +65,13 @@ function paintText (reseñaObj){
   var $btn = $("<button />");
   var $btnLike = $("<p />");
 
-  $newContainer.addClass("new");
+  $newContainer.addClass("newClass");
   $newText.addClass("text")
   $btn.addClass("btnShare");
 
-  $newContainer.append($btn);
   $newContainer.append($newText);
+  $newContainer.append($btn);
+
   $btn.append($btnLike);
 
   $newText.text(reseñaObj.text);
@@ -90,26 +91,30 @@ function paintMembers (element) {
   var $nameMember = $("<p />");
 
   $imgMember.addClass("avatar");
+  $nameMember.addClass("name");
 
-  $nameMember.text(users.name);
-  $imgMember.attr('src', users.avatar);
+  $nameMember.text(element.name);
+  $imgMember.attr('src', element.avatar);
 
-  $(".members-container").prepend($imgMember);
-  $(".members-container").prepend($nameMember);
+  $("#members-container").prepend($imgMember);
+  $("#members-container").prepend($nameMember);
 
 }
 
 function filterMembers (){
     var $searchInput = $('#search-friends').val().toLowerCase();
     if($("#search-friends").val().trim().length > 0) {
+
       var filteredMembers = users.filter(function(member) {
         //console.log(members);
+        console.log(users);
+        console.log(member);
 
-        if(users.name.toLowerCase().indexOf(searchInput) >= 0) {
+        if(member.name.toLowerCase().indexOf($searchInput) >= 0) {
           return true;
         }
 
-        if(users.console.toLowerCase().indexOf(searchInput) >= 0) {
+        if(member.console.toLowerCase().indexOf($searchInput) >= 0) {
           return true;
         }
 
