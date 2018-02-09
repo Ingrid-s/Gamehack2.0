@@ -89,8 +89,10 @@ h3{
 	margin-right: 1vh;
 }
 
+
 #comentario,
 #write{
+background-color:#fff;
 	margin-top: 5%;
 	margin-left: 2%;
     border:1px solid #00a186;
@@ -100,6 +102,7 @@ h3{
 	}
 
 #benviar,
+
 #sendComments{
 	margin-left: 2%;
 	margin-bottom: 2%;
@@ -117,6 +120,31 @@ background-color: #2f4357;
 color: #00a186;
 margin-top: 5%;
 margin-left: 2%;
+}
+
+a{
+	text-align: center;
+  
+#sendComments{
+	margin-left: 2%;
+	margin-bottom: 2%;
+    color: #2f4357;
+    background-color: #00a186;
+	display: inline-block;
+	border: 2px solid;
+	font-size: 15px;
+    
+}
+#comments{
+list-style: none;
+text-decoration: none;
+background-color: #2f4357;
+color: #00a186;
+margin-top: 5%;
+}
+
+#sendComments{
+	background-color:#00a186;
 }
 
 a{
