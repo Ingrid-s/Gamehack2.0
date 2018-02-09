@@ -72,22 +72,26 @@ var games =[
 var users =[
 
 {
- "Name" : "Mario Bros77",
- "Console" : "Nintendo Switch"
+ "name" : "Mario Bros77",
+ "console" : "Nintendo Switch",
+ "avatar" :
 },
 
 {
- "Name" : "Bella Gamer",
- "Console" : "PS4"
+ "name" : "Bella Gamer",
+ "console" : "PS4",
+ "avatar" :
 },
 
 {
- "Name" : "Alan Turing",
- "Console" : "Xbox One"
+ "name" : "Alan Turing",
+ "console" : "Xbox One",
+ "avatar" :
 },
 {
- "Name" : "Batman",
- "Console" : "PS4"
+ "name" : "Batman",
+ "console" : "PS4",
+ "avatar" :
 },
 
 ];
