@@ -72,26 +72,26 @@ var games =[
 var users =[
 
 {
- "name" : "Mario Bros77",
- "console" : "Nintendo Switch",
- "avatar" :
+ "name" : "mario bros77",
+ "console" : "nintendo switch",
+ "avatar" :"assets/images/avatar-1.png"
 },
 
 {
- "name" : "Bella Gamer",
- "console" : "PS4",
- "avatar" :
+ "name" : "bella gamer",
+ "console" : "ps4",
+ "avatar" :"assets/images/avatar-2.png"
 },
 
 {
- "name" : "Alan Turing",
- "console" : "Xbox One",
- "avatar" :
+ "name" : "glan turing",
+ "console" : "xbox one",
+ "avatar" :"assets/images/avatar-3.png"
 },
 {
- "name" : "Batman",
- "console" : "PS4",
- "avatar" :
+ "name" : "batman",
+ "console" : "ps4",
+ "avatar" :"assets/images/avatar-4.png"
 },
 
 ];
