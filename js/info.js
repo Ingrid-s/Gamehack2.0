@@ -38,7 +38,29 @@ function subirImagen() {
 $(document).ready(function () {
   $("#benviar").click(function () {
 
+/*
+$(document).ready(loadPage);
+
+
+function printImage (x) {
+  var $imageConainer = $("<a />");
+  var $imgS = $("<img />");
+
+  $imageConainer.addClass("image-container");
+  $imageContainer.attr('src', x.image);
+
+  $foodContainer.append($textFood);
+  $foodContainer.append($imgFood);
+
+ $("#rest-container").prepend($foodContainer);
+
+  $foodContainer.click(filterModal);
+  filterModal(restaurant);
+
+}
+*/
       $("#comments").prepend('<hr>' + $("#comentario").val() );
       $("#comentario").val('');
   });
 });
+

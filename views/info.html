@@ -48,39 +48,6 @@
               </div>
           </div>
       </nav>
-=======
-    <!--Navbar con menú-->
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-                    aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <img src="../assets/images/logo-azul.png" class="logo" alt="logo">
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="active">
-
-                        <ul class="nav navbar-nav navbar-right">
-                            <li>
-                                <a href="../perfil.html">Profile</a>
-                            </li>
-                            <li>
-                                <a href="#">Settings</a>
-                            </li>
-                            <li>
-                                <a id="btn-logout" class="btn btn-danger twitch-disconnect" href="../index.html">Log Out</a>
-                            </li>
-                        </ul>
-            </div>
-        </div>
-    </nav>
 
 
       <gcse:search></gcse:search>
@@ -143,13 +110,10 @@
           <!--Área para postear imagenes-->
           <form id="image">
               <div class= "form-group">
-                <textarea class="form-control advice" placeholder=" "></textarea>
-
-
-                <div class="form-group">
+                <textarea class="form-control advice hidden" placeholder=" "></textarea>
                   <input type="file" class="form-control-file" id="load">
                   <button type="button" class="btn btn-primary mb-2 text-rigth button-publish" id="post">Publicar</button>
-                </div>
+
 
 
    <!--Area para escribir comentarios-->
@@ -171,8 +135,8 @@
 </section>
 
                 <div class="row colection">
-                    <div class="col-xs-12">
-                      <a href="#" class="thumbnail">
+                    <div class="col-xs-12 ">
+                      <a href="#" class="thumbnail image-container">
                         <img class="caption" src="" alt="">
                       </a>
                     </div>
@@ -180,26 +144,29 @@
               </div>
         </form>
 
+        <section>
+            <!--Area para escribir comentarios-->
+            <div class="row">
+                <div class="col-xs-5 col-sm-5">
+                    <h3>Intercambio y venta</h3>
+                    <textarea id="write" name="name" rows="3" cols="50"></textarea>
+                  <button type="button" name="button">Publicar Oferta</button>
 
 
-
-         
-
-
-<section>
-    <!--Area para escribir comentarios-->
-    <div class="row">
-        <div class="col-xs-12 col-sm-12">
-            <h3>Intercambio y venta</h3>
-            <textarea id="write" name="name" rows="3" cols="48" placeholder="Postea tus artículos"></textarea>
-            <button id="sendComments" type="button" name="button">Compartir</button>
-        </div>
-    </div>
-</section>
+            </div>
+        </section>
 
 
-
-
+        <section>
+            <!--Area para coloocar anuncios de trueque, compra o venta de productos relacionados-->
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <h3>Intercambio y venta</h3>
+                    <textarea id="write" name="name" rows="3" cols="48" placeholder="Postea tus artículos"></textarea>
+                    <button id="sendComments" type="button" name="button">Compartir</button>
+                </div>
+            </div>
+        </section>
 
     <!-- Modal Dragon Ball -->
     <div id="myModal" class="modal fade" role="dialog">
