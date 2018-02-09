@@ -29,13 +29,8 @@ $(function(){
       if (status.authenticated) {
 
       getInfo(function(data){
-
-          localStorage.setItem('nameTwitch',data.display_name );
-          var nameTwitch =localStorage.getItem('nameTwitch');
-          console.log(nameTwitch);
-          /*$('strong').text(data.display_name);
-          $('#picture').attr('src',"https://static-cdn.jtvnw.net/user-default-pictures/0ecbb6c3-fecb-4016-8115-aa467b7c36ed-profile_image-300x300.jpg");
-         window.location.href = window.location.origin + "/Gamehack/views/info.html";*/
+         localStorage.setItem('nameTwitch',data.display_name );
+         window.location.href = window.location.origin + "/Gamehack/views/info.html";
 
  //función añade imagen y texto de acuerdo a el log in con twitch
       });
