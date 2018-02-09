@@ -2,36 +2,44 @@
 body{
   background-color: #21272B;
   color: #fff;
+  max-width: 750 px;
   text-align: center;
 }
+
+form{
+  margin-top: 3%;
+  margin-right: 5%;
+}
+
 input{
   margin: 5%;
 }
 
-form{
-  margin-top: 15%;
-  margin-right: 5%;
-}
-
 #login{
-  margin-left: 5%;
+  margin-left: 20%;
 }
 
 #sign{
-  margin-top:30%;
-  margin-left: 10%;
+  margin-bottom: 5%;
+  margin-left: 40%;
 }
 
 #logo{
-  margin-top: 30%;
-  height: 15vh;
-  width: 120%;
+  margin-top: 8%;
+  margin-left: 55%;
+  height: 10vh;
+  width: 100%;
 }
 
 #next{
   background-color: #f12545;
   border:  #f12545;
   color: #fff;
+}
+
+#twitch{
+  height: 5vh;
+  width: 60%;
 }
 
 .container-2{
@@ -44,7 +52,7 @@ form{
 }
 
 .title{
-  font-family: 'Rammetto One', cursive;
+  font-family: 'VT323', monospace;
   font-size: 3em;
 }
 
@@ -53,11 +61,11 @@ form{
 }
 
 .signup-container{
-    background-color: #14191C;
-    border-radius: 10%;
-    font-family: 'Rammetto One', cursive;
-    height: 70vh;
-    margin-top: 7%;
-    text-align: center;
-    width: 100%;
+  background-color: #14191C;
+  border-radius: 10%;
+  font-family: 'Barlow', sans-serif;
+  height: 60vh;
+  margin-left: 8%;
+  text-align: center;
+  width: 85%;
 }

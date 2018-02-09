@@ -1,8 +1,8 @@
 body {
   background-color: #21272B;
+  color: #fff;
+  font-family: 'Barlow', sans-serif;
 }
-
-
 
 .logo-splash {
   height: 15vh;
@@ -15,6 +15,7 @@ body {
 .navbar-header {
   height: 10vh;
   background-color: #00A186;
+  font-family: 'VT323', monospace;
 }
 
 .logo {
@@ -42,21 +43,22 @@ body {
 
 .nombre-usuario {
   text-align: center;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.5em;
+  font-family: 'VT323', monospace;
+  font-size: 1.9em;
   margin-left: 3vh;
   color: #00A186;
 }
 
 /*reseña */
-.thumbnail {
-  margin-top: 3vh;
+.thumbnail,.new {
+  margin:2%;
   margin-left: 4vh;
   width: 50vh;
-  height: 29vh;
+  height: 10vh;
   background-color: #14191C;
   border-color: #14191C;
-  color: white;
+  font-size: 'Barlow',sans-serif;
+  color: #fff;
 }
 
 .fa-pencil {
@@ -70,13 +72,18 @@ body {
   border-color: #00A186;
 }
 
+.add{
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+
 h3 {
   color: #3A464C;
 }
 
 .amigos, .reseña {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.5em;
+  font-family: 'VT323', monospace;
+  font-size: 1.8em;
   margin-left: 3vh;
   color: #00A186;
 }
@@ -92,4 +99,27 @@ h3 {
   background-color: #14191C;
   border-color: #14191C;
   color: white;
+}
+
+//estilos elementos DOM
+
+.text{
+  font-family: 'VT323', monospace;
+  font-size: 1.2em;
+}
+
+.btnShare{
+  background-color: #00A186;
+  border-color: #00A186;
+  border-radius: 5%;
+  color:#fff;
+  font-family: 'VT323', monospace;
+  height: 3vh;
+  margin-left: 2%;
+}
+
+.name{
+  font-family: 'VT323', monospace;
+  font-size: 1.5em;
+  text-align: center;
 }
