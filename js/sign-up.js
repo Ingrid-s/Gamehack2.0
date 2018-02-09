@@ -35,4 +35,18 @@ function saveData (){
 
 }
 
+$('#userAvatar').click(subirImagen);
+function subirImagen() {
+  var $load = $('#load')[0].files[0];
+  console.log($load);1
+  var read = new FileReader();
+  read.onloadend = function (){
+    $('.caption').attr('src', read.result);
+  }
+  if($load) {
+    read.readAsDataURL($load);
+  }else {
+    $('.caption').attr('src', " ")
+  }
+}
 $(document).ready(loadPage);

@@ -50,13 +50,14 @@ body {
 }
 
 /*reseña */
-.thumbnail {
-  margin-top: 3vh;
+.thumbnail,.new {
+  margin:2%;
   margin-left: 4vh;
   width: 50vh;
   height: 10vh;
   background-color: #14191C;
   border-color: #14191C;
+  font-size: 'Barlow',sans-serif;
   color: #fff;
 }
 
@@ -107,7 +108,7 @@ h3 {
 }
 
 .text{
-  font-size: font-family: 'VT323', monospace;
+  font-family: 'VT323', monospace;
   font-size: 1.2em;
   color: #red;
 }
@@ -119,5 +120,11 @@ h3 {
   color:#fff;
   font-family: 'VT323', monospace;
   height: 3vh;
-  margin-left: 5%;
+  margin-left: 2%;
+}
+
+.name{
+  font-family: 'VT323', monospace;
+  font-size: 1.5em;
+  text-align: center;
 }
