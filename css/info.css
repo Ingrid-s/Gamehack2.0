@@ -39,13 +39,7 @@ h3{
 	background-color: #14191c;
 }
 
-.container-fluid > .navbar-collapse,
-.container-fluid > .navbar-header,
-.container > .navbar-collapse,
-.container > .navbar-header {
-	margin-right: -28px;
-	margin-left: -28px;
-}
+
 
 .page-header {
 	color: #00a186;
@@ -85,7 +79,7 @@ h3{
 }
 
 .modal {
-	margin-top: 35vh;
+	margin-top: 25vh;
 	margin-right: 1vh;
 }
 
@@ -97,3 +91,41 @@ h3{
 #sendComments{
 	background-color:#00a186;
 }
+
+.fa-star, .fa-star-half {
+	color: #F7CF0B;
+}
+
+.dragon, .final, .jurassic, .gts, .megaman {
+	width: 40vh;
+	float: right;
+	position: relative;
+	margin-top: 5vh;
+	margin-right: 7vh;
+}
+
+.btn-default {
+	margin-left: 34vh;
+	font-family: 'Barlow', sans-serif;
+	background-color: #00a186;
+	color: white;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*.fa-star {
+	font-family: 'Ionicons';
+	font-size: 48px;
+	display: inline-flex;
+	cursor: pointer;
+}
+
+.fa-star > .star::after {
+	color:grey;
+
+}
+
+.fa-star > .star.full::after {
+	color: yellow;
+}
+*/
