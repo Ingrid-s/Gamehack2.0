@@ -89,6 +89,9 @@ h3{
 	margin-right: 1vh;
 }
 
+#write{
+  background-color:#fff;
+
 
 #comentario,
 #write{
@@ -117,6 +120,12 @@ text-decoration: none;
 background-color: #2f4357;
 color: #00a186;
 margin-top: 5%;
+
+}
+
+#sendComments{
+	background-color:#00a186;
+
 }
 
 a{
