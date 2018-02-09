@@ -13,8 +13,6 @@ var $addBtn = $('#add');
 
 //funcion que se activa al estar lista la pág
 function loadPage () {
-  $twitchtBtn.click(paintDataTwitch);
-  $nextBtn.click(paintDataLocal);
   $textArea.keyup(validateText);
   $addBtn.click(getText,paintText);
   $searchInput.keyup(filterMembers);
@@ -23,13 +21,12 @@ function loadPage () {
 
 //funcion que pinta la data obtenida en el index.html
 function paintDataTwitch () {
-  $nameUser.text(localStorage.getItem('nameTwitch'));
+  localStorage.getItem('nameTwitch');
   //$('#picture').attr('src',"https://static-cdn.jtvnw.net/user-default-pictures/0ecbb6c3-fecb-4016-8115-aa467b7c36ed-profile_image-300x300.jpg");
 }
 
-
 //funcion que pinta la data obtenida en el index.html
-function paintDataLocal () {
+function paintData () {
   $nameUser.text(localStorage.getItem('userName'));
 }
 
@@ -129,5 +126,6 @@ function filterMembers (){
 
 }
 
-
+$(document).ready(paintData);
+$(document).ready(paintDataTwitch);
 $(document).ready(loadPage);
