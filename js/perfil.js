@@ -65,7 +65,7 @@ function paintText (reseñaObj){
   var $btn = $("<button />");
   var $btnLike = $("<p />");
 
-  $newContainer.addClass("newClass");
+  $newContainer.addClass("new");
   $newText.addClass("text")
   $btn.addClass("btnShare");
 
