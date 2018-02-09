@@ -141,9 +141,28 @@ Se trabajo en la vista perfil para dar funcionalidad de las reseñas y para subi
 
 ## Actualización en la maquetación (Adri y Kary)
 
-Se avanzo a la realización de los modales y de 
+Se avanzo a la realización de los modales y en la maquetación de la vista de información
 
+***
+## VIERNES 09/02/2018
+### Flujo de trabajo Viernes
 
+* **Revisión de funcionalidad**
+* **Revisión de la maqueta**
+* **Actualización de README**
+
+***
+## Revisión de funcionalidad 
+
+Cada una estuvo al pendiente de una funcionalidad y se debió revisar que funcionará todo adecuadamente
+
+## Revisión en la maquetación 
+
+Se revisa que todo lo maquetado anteriormente se vea como en el sketch realizado
+
+## Actualización README
+
+Última actualización de Readme con los avances del proyecto hasta el día de hoy
 
 ***
 
