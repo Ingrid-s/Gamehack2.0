@@ -9,15 +9,15 @@ var $twitchtBtn = $('#twitch');
 
 //variables globales para uso de funcion addPost
 var $textArea = $('#reseña');
-var $addBtn = $('#add');
+var $addBtn = $('.add');
 
 //funcion que se activa al estar lista la pág
 function loadPage () {
   $textArea.keyup(validateText);
   $addBtn.click(getText);
-  $addBtn.click(paintText);
-  //$searchInput.keyup(filterMembers);
-  //$searchInput.click(paintMembers);
+  //$addBtn.click(paintText);
+  $searchInput.keyup(filterMembers);
+  $searchInput.click(paintMembers);
 }
 
 /*funcion que pinta la data obtenida en el index.html
@@ -52,7 +52,10 @@ function getText (e) {
  textUsers.push(reseñaObj);
  console.log(reseñaObj,textUsers);//se guarda en un obj y posteriormente en un array global
  paintText(reseñaObj);
+
+  $textArea.val("")
 }
+
 
 //funcion que pinta la data obtenida en el index.html
 function paintText (reseñaObj){
@@ -76,7 +79,7 @@ function paintText (reseñaObj){
   $(".new-container").prepend($newContainer);
 }
 
-/*
+
 //filtrado buscar Amigos
 //variables globales para el uso de filtrado
 var $searchInput = $('#search-friends');
@@ -125,7 +128,7 @@ function filterMembers (){
     });
   }
 
-}*/
+}
 
 $(document).ready(paintData);
 //$(document).ready(paintDataTwitch);

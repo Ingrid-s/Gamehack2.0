@@ -71,7 +71,7 @@ body {
   border-color: #00A186;
 }
 
-#add{
+.add{
   margin-left: 10%;
   margin-bottom: 10%;
 }
@@ -102,9 +102,14 @@ h3 {
 
 //estilos elementos DOM
 
-p.text{
-  font-size: 5em;
-  color: #fff;
+.new{
+  background-color: red;
+}
+
+.text{
+  font-size: font-family: 'VT323', monospace;
+  font-size: 1.2em;
+  color: #red;
 }
 
 .btnShare{
@@ -113,4 +118,6 @@ p.text{
   border-radius: 5%;
   color:#fff;
   font-family: 'VT323', monospace;
+  height: 3vh;
+  margin-left: 5%;
 }
