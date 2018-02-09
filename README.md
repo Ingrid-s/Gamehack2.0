@@ -127,6 +127,23 @@ Se inicia la maquetación de la vista de información donde se tendrán los últ
 
 Actualización de README con avances del proyecto
 
+***
+## JUEVES 08/02/2018
+### Flujo de trabajo jueves
+
+* **Avances en funcionalidad**
+* **Actualización en la maquetación**
+
+***
+## Avances de funcionalidad (Ingrid y Jess)
+
+Se trabajo en la vista perfil para dar funcionalidad de las reseñas y para subir imagen como post
+
+## Actualización en la maquetación (Adri y Kary)
+
+Se avanzo a la realización de los modales y de 
+
+
 
 ***
 
