@@ -90,7 +90,8 @@ h3{
 }
 
 
-#comentario{
+#comentario,
+#write{
 	margin-top: 5%;
 	margin-left: 2%;
     border:1px solid #00a186;
@@ -99,8 +100,10 @@ h3{
 	text-decoration: none;
 	}
 
-#benviar{
+#benviar,
+#sendComments{
 	margin-left: 2%;
+	margin-bottom: 2%;
     color: #2f4357;
     background-color: #00a186;
 	display: inline-block;
@@ -114,4 +117,8 @@ text-decoration: none;
 background-color: #2f4357;
 color: #00a186;
 margin-top: 5%;
+}
+
+a{
+	text-align: center;
 }
