@@ -30,7 +30,7 @@ $(function(){
 
       getInfo(function(data){
          localStorage.setItem('nameTwitch',data.display_name );
-         window.location.href = window.location.origin + "/Gamehack/views/info.html";
+         window.location.href = window.location.origin + "/Gamehack2.0/views/info.html";
 
  //función añade imagen y texto de acuerdo a el log in con twitch
       });
