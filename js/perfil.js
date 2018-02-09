@@ -14,16 +14,17 @@ var $addBtn = $('#add');
 //funcion que se activa al estar lista la pág
 function loadPage () {
   $textArea.keyup(validateText);
-  $addBtn.click(getText,paintText);
-  $searchInput.keyup(filterMembers);
-  $searchInput.click(paintMembers);
+  $addBtn.click(getText);
+  $addBtn.click(paintText);
+  //$searchInput.keyup(filterMembers);
+  //$searchInput.click(paintMembers);
 }
 
-//funcion que pinta la data obtenida en el index.html
+/*funcion que pinta la data obtenida en el index.html
 function paintDataTwitch () {
   localStorage.getItem('nameTwitch');
   //$('#picture').attr('src',"https://static-cdn.jtvnw.net/user-default-pictures/0ecbb6c3-fecb-4016-8115-aa467b7c36ed-profile_image-300x300.jpg");
-}
+}*/
 
 //funcion que pinta la data obtenida en el index.html
 function paintData () {
@@ -42,14 +43,14 @@ function validateText (){
 //funcion que trae la info obtenida de textarea
 function getText (e) {
   e.preventDefault();
- var reseña = $textArea.val();
-
- var reseñaObj = {
-    "text": reseña,
+  var reseña = $textArea.val();
+    //console.log(reseña);
+  var reseñaObj = {
+    "text": reseña
     };
 
  textUsers.push(reseñaObj);
- console.log(reseñaObj, textUsers);//se guarda en un obj y posteriormente en un array global
+ console.log(reseñaObj,textUsers);//se guarda en un obj y posteriormente en un array global
  paintText(reseñaObj);
 }
 
@@ -75,7 +76,7 @@ function paintText (reseñaObj){
   $(".new-container").prepend($newContainer);
 }
 
-
+/*
 //filtrado buscar Amigos
 //variables globales para el uso de filtrado
 var $searchInput = $('#search-friends');
@@ -124,8 +125,8 @@ function filterMembers (){
     });
   }
 
-}
+}*/
 
 $(document).ready(paintData);
-$(document).ready(paintDataTwitch);
+//$(document).ready(paintDataTwitch);
 $(document).ready(loadPage);
