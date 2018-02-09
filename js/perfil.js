@@ -18,6 +18,8 @@ function paintData () {
 function loadPage () {
   $textArea.keyup(validateText);
   $addBtn.click(getText,paintText);
+  $searchInput.keyup(filterMembers);
+  $searchInput.click(paintMembers);
 }
 
 //funcion que valida que no esté vacio text area
@@ -69,20 +71,27 @@ function paintText (reseñaObj){
 //filtrado buscar Amigos
 //variables globales para el uso de filtrado
 var $searchInput = $('#search-friends');
-var $goBtn =$ ('#go');
 
-function paintMembers () {
-  
+function paintMembers (element) {
+
+ var $imgMember = $("<img />");
+  var $nameMember = $("<p />");
+
+  $imgMember.addClass("avatar");
+
+  $nameMember.text(users.name);
+  $imgMember.attr('src', users.avatar);
+
+  $(".members-container").prepend($imgMember);
+  $(".members-container").prepend($nameMember);
+
 }
 
-
-
-
 function filterMembers (){
-  var $searchInput = $('#search-friends').val().toLowerCase();
+    var $searchInput = $('#search-friends').val().toLowerCase();
     if($("#search-friends").val().trim().length > 0) {
-      var filteredMembers = data.filter(function(members) {
-        //console.log(restaurant);
+      var filteredMembers = users.filter(function(member) {
+        //console.log(members);
 
         if(users.name.toLowerCase().indexOf(searchInput) >= 0) {
           return true;
@@ -102,12 +111,11 @@ function filterMembers (){
 
     } else {
       $("#members-container").empty();
-
-        data.forEach(function(element){
+        users.forEach(function(element){
         paintMembers(element);
     });
   }
-  console.log(filteredMembers);
+
 }
 
 $(document).ready(paintData);
