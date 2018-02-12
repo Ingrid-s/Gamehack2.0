@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
         <link href="https://fonts.googleapis.com/css?family=Questrial|Quicksand:400,700|Roboto:400,700,900" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../css/perfil.css">
         <link rel="icon" type="image/png" href="../assets/images/maquinita.png">
+        <link href="https://fonts.googleapis.com/css?family=Barlow|VT323" rel="stylesheet">
         <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-
-
+        
+   
     <title>Perfil</title>
 </head>
 <body>
@@ -37,62 +40,66 @@
 
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#">Mi Perfil</a>
+                        <a href="#">Home</a>
                     </li>
                     <li>
-                        <a href="#">Configuración</a>
+                        <a href="#">Settings</a>
                     </li>
                     <li>
-                        <a href="#">Cerrar sesión</a>
+                      <a id="btn-logout" class="btn btn-danger twitch-disconnect"href="../index.html">Log out</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-<!-- Avatar -->
-<img class="avatar" src="../assets/images/avatar.png" alt="">
-<p class="nombre-usuario">Usuario</p>
-<!-- Avatar -->
-<p class="reseña">Reseñas</p>
-<div class="row">
-  <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <i class="fa fa-pencil fa-2x" aria-hidden="true"></i>
+    <!-- Avatar -->
+    <div id="login-info">
+      <img id="picture" class="avatar" src="../assets/images/avatar-1.png" alt="userPhoto">
+      <p class="nombre-usuario">Usuario</p>
+    </div>
 
-      <div class="caption">
-        <h3>Escribe tu reseña</h3>
-        <p>...</p>
-        <p><a href="#" class="btn btn-primary" role="button">Agregar</a> </p>
+      <!-- Reseña -->
+      <p class="reseña">Reseña de mis favoritos</p>
+
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <textarea id="reseña" class="thumbnail" name="name" rows="5" cols="80" placeholder="Escribe tu reseña"></textarea>
+          <button href="#" class="btn btn-primary add" disabled="disabled">Add</button>
+        </div>
       </div>
+
     </div>
   </div>
 </div>
 <button type="button" class="btn btn-default"><i class="far fa-thumbs-up"></i>
 
 </button>
+
+<!-- Elementos creados por DOM -->
+      <div class="new-container"></div>
+
+
 <!-- Amigos -->
 <p class="amigos">Amigos</p>
 <div class="row">
   <div class="col-lg-6">
     <div class="input-group">
       <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Go!</button>
+        <button id="go" class="btn btn-default" type="button">Go!</button>
       </span>
-      <input type="text" class="form-control" placeholder="Busca por consola...">
+      <input id="search-friends" type="text" class="form-control" placeholder="Busca por nombre o consola ">
     </div><!-- /input-group -->
   </div><!-- /.col-lg-6 -->
-  <div class="col-lg-6">
-    <div class="input-group">
-      <input type="text" class="form-control" placeholder="Busca por nombre...">
-      <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Go!</button>
-      </span>
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
+  <div id="members-container"></div>
 </div><!-- /.row -->
 
 <!-- Enlaces -->
-<script src="./js/jquery-3.2.1.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="../js/jquery-3.3.1.min.js" charset="utf-8"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<script type="text/javascript" src="../js/sign-up.js"></script>
+<script type="text/javascript" src="../js/data.js"></script>
+<script type="text/javascript" src="../js/perfil.js"></script>
+
 </body>
 </html>
