@@ -114,7 +114,9 @@ margin-left: 2%;
 }
 
 a{
-    text-align: center;
+	text-align: center;
+	text-decoration: none;
+	color: white;
 }
 
 
@@ -140,3 +142,24 @@ a{
   align-items: center;
 }
 
+.page-footer{	
+	color: #2f4357;
+	color: white;
+	font-size: 12px;
+}
+
+
+
+.redes{
+	color: white;
+	text-decoration: none;
+	margin-top: 5%;
+}
+
+.title {
+	margin-top: 26%;
+}
+
+.nuestras{
+color: #2f4357;
+}
