@@ -1,13 +1,13 @@
 // Splash view
  $(document).ready(function() {
    setTimeout(function() {
-     $(".container-1").fadeIn(0000).fadeOut(1500);
+     $("#container-1").fadeIn(0000).fadeOut(1500);
    },2000);
 });
 
 $(document).ready(function() {
    setTimeout(function() {
-       $(".container-2").fadeIn(1500);
+       $("#container-2").fadeIn(1500);
    },2000);
 });
 
