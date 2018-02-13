@@ -1,97 +1,199 @@
-var games =[
 
 {
- "Title" : "Dragon Ball FighterZ",
- "Console" : ["Nintendo Switch", "PS4", "Xbox One"],
-  "Ranking" : 4.3,
- "photo" : "../assets/images/dragonball.jpg"
+  "games":{
+    "dbz":{
+      "title":"Dragon Ball FighterZ",
+      "photo":"../assets/images/dragonball.jpg",
+      "gameConsole":{
+                  {"nintendo switch":true},
+                  {"ps4":true},
+                  {"xbox one":true}
+                }
+    }
+
+  }
 },
 
 {
-  "Title" : "Pokémon Switch",
-  "Console" : "Nintendo Switch",
-   "Ranking" : 4.0,
-  "photo" : "../assets/images/pokemonns.jpg"
+  "games":{
+    "pkm":{
+      "title":"Pokémon Switch",
+      "photo":"../assets/images/pokemonns.jpg",
+      "gameConsole":{
+                  {"nintendo switch":true},
+                  {"ps4":false},
+                  {"xbox one":false}
+                }
+    }
+
+  }
 },
 
 {
-  "Title" : "Jurassic World Evolution",
-  "Console" : "PS4",
-   "Ranking" : 4.1,
-  "photo" : "../assets/images/jwevolution.jpg"
+  "games":{
+    "jw":{
+      "title":"Jurassic World Evolution",
+      "photo":"../assets/images/jwevolution.jpg",
+      "gameConsole":{
+                  {"nintendo switch":false},
+                  {"ps4":true},
+                  {"xbox one":false}
+                }
+    }
+
+  }
 },
 
 {
-  "Title" : "Yoshi",
-  "Console" : "Nintendo Switch",
-   "Ranking" : 4.2,
-  "photo" : "../assets/images/yoshi.jpg"
+  "games":{
+    "ys":{
+      "title":"Yoshi",
+      "photo":"../assets/images/yoshi.jpg",
+      "gameConsole":{
+                  {"nintendo switch":true},
+                  {"ps4":false},
+                  {"xbox one":false}
+                }
+    }
+
+  }
 },
 
 {
-  "Title" : "Ni No Kuni II",
-  "Console" : "PS4",
-   "Ranking" : 4.6,
-  "photo" : "../assets/images/nino.jpg"
+  "games":{
+    "ys":{
+      "title":"Ni No Kuni II",
+      "photo":"../assets/images/nino.jpg",
+      "gameConsole":{
+                  {"nintendo switch":false},
+                  {"ps4":true},
+                  {"xbox one":false}
+                }
+    }
+
+  }
 },
 
 {
-  "Title" : "Spiderman",
-  "Console" : "PS4",
-   "Ranking" : 4.4,
-  "photo" : "../assets/images/Spiderman.png"
- },
+  "games":{
+    "sm":{
+      "title":"Spiderman",
+      "photo":"../assets/images/Spiderman.png",
+      "gameConsole":{
+                  {"nintendo switch":false},
+                  {"ps4":true},
+                  {"xbox one":false}
+                }
+    }
+
+  }
+},
 
 {
-  "Title" : "Megaman X",
-  "Console" :  ["Nintendo Switch", "PS4", "Xbox One"],
-   "Ranking" : 4.8,
-  "photo" : "../assets/images/mm11.jpg"
+  "games":{
+    "sm":{
+      "title":"Megaman X",
+      "photo":"../assets/images/mm11.jpg",
+      "gameConsole":{
+                  {"nintendo switch":true},
+                  {"ps4":true},
+                  {"xbox one":true}
+                }
+    }
+
+  }
 },
 
 {
-  "Title" : "Final Fantasy XV",
-  "Console" : "Xbox One",
-   "Ranking" : 5.0,
-  "photo" : "../assets/images/finalfantasy.jpg"
+  "games":{
+    "sm":{
+      "title":"Final Fantasy XV",
+      "photo":"../assets/images/finalfantasy.jpg",
+      "gameConsole":{
+                  {"nintendo switch":false},
+                  {"ps4":false},
+                  {"xbox one":true}
+                }
+    }
+
+  }
 },
+
 {
-  "Title" : "Gran Turismo Sport",
-  "Console" : "PS4",
-   "Ranking" : 4.1,
-  "photo" : "../assets/images/gtsport.jpg"
+  "games":{
+    "sm":{
+      "title":"Gran Turismo Sport",
+      "photo":"../assets/images/gtsport.jpg",
+      "gameConsole":{
+                  {"nintendo switch":false},
+                  {"ps4":true},
+                  {"xbox one":false}
+                }
+    }
+
+  }
 },
+
 {
-  "Title" : "Mario Kart 8 Deluxe",
-  "Console" : "Nintendo Switch",
-   "Ranking" : 4.0,
-  "photo" : "../assets/images/mariokart.png"
+  "games":{
+    "sm":{
+      "title":"Mario Kart 8 Deluxe",
+      "photo":"../assets/images/mariokart.png",
+      "gameConsole":{
+                  {"nintendo switch":true},
+                  {"ps4":false},
+                  {"xbox one":false}
+                }
+    }
+
+  }
 }
-];
 
-var users =[
 
 {
- "name" : "mario bros77",
- "console" : "nintendo switch",
- "avatar" :"../assets/images/avatar-1.png"
-},
+  "users": {
+  "mb":{
+    "name": "Mario Bros"
+    "avatar":"../assets/images/avatar-1.png",
+    "gameConsole": { "nintendo switch": true },
+    },
+    "ps4": {false},
+    "nbox One": {false}
+  }
+}
 
 {
- "name" : "bella gamer",
- "console" : "ps4",
- "avatar" :"../assets/images/avatar-2.png"
-},
+  "users": {
+  "bg":{
+    "name": "Bella Gamer"
+    "avatar":"../assets/images/avatar-2.png",
+    "gameConsole": { "ps4": true },
+    },
+    "nintendo switch": {false},
+    "xbox one": {false}
+  }
+}
 
 {
- "name" : "glan turing",
- "console" : "xbox one",
- "avatar" :"../assets/images/avatar-3.png"
-},
-{
- "name" : "batman",
- "console" : "ps4",
- "avatar" :"../assets/images/avatar-4.png"
-},
+  "users": {
+  "at":{
+    "name": "Alan Turing"
+    "avatar":"../assets/images/avatar-3.png",
+    "gameConsole": { "ps4": true },
+    },
+    "nintendo switch": {false},
+    "xbox one": {false}
+  }
+}
 
-];
+{
+  "users": {
+  "b":{
+    "name": "Batman"
+    "avatar":"../assets/images/avatar-4.png",
+    "gameConsole": { "ps4": true },
+    },
+    "nintendo switch": {false},
+    "xbox one": {false}
+  }
+}

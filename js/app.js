@@ -74,3 +74,11 @@ $(function(){
     logout();
   })
 })
+
+function writeUserData(id, title, photoUrl, gameConsole) {
+  firebase.database().ref('users/' + userId).set({
+    gametitle: title,
+    photoUrl: photo,
+    gameConsole : gameConsole
+  });
+}
